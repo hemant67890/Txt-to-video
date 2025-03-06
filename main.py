@@ -174,9 +174,9 @@ async def upload(bot: Client, m: Message):
     await input3.delete(True)
 
     # Default credit message
-    credit = "️𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎 🕊️⁪⁬⁮⁮⁮"
+    credit = "️𝘴𝘴ᥴ ᭙ꪖꪶꪖ⁪⁬⁮⁮⁮"
     if raw_text3 == '1':
-        CR = '𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎 🕊️'
+        CR = '𝘴𝘴ᥴ ᭙ꪖꪶꪖ'
     elif raw_text3:
         CR = raw_text3
     else:
@@ -272,12 +272,11 @@ async def upload(bot: Client, m: Message):
             else:
                 cmd = f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'
 
-            try:  
+            try:
                 
-                cc = f'**╭━━━━━━━━━━━╮\n🎬 VIDEO ID: {str(count).zfill(3)}.\n╰━━━━━━━━━━━╯\n\n📄 Title: {name1} {res} 𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎.mkv\n\n<pre><code>📚 Batch Name: {b_name}</code></pre>\n\n📥 Extracted By : {CR}**'
-                cc1 = f'**╭━━━━━━━━━━╮\n📁 FILE ID: {str(count).zfill(3)}.\n╰━━━━━━━━━━╯\n\n📄 Title: {name1} 𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎.pdf \n\n<pre><code>📚 Batch Name: {b_name}</code></pre>\n\n📥 Extracted By : {CR}**'
-                    
-                
+                cc = f' **╭━━━━━━━━━━━╮**\n**➭ 𝐈𝐧𝐝𝐞𝐱 » {str(count).zfill(3)}**\n╰━━━━━━━━━━━╯ **\n**➭ 𝐓𝐢𝐭𝐥𝐞 »  {name1}.mkv**\n**➭ 𝐁𝐚𝐭𝐜𝐡 » {b_name} **\n**➭ 𝐐𝐮𝐚𝐥𝐢𝐭𝐲 » {raw_text2}**\n\n✨ **𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐃 𝐁𝐘 : {CR}**\n**━━━━━━━✦✗✦━━━━━━━**'
+                cc1 = f'**╭━━━━━━━━━━━╮**\n**➭ 𝐈𝐧𝐝𝐞𝐱 » {str(count).zfill(3)} **\n╰━━━━━━━━━━━╯**\n**➭ 𝐓𝐢𝐭𝐥𝐞 » {name1}.pdf** \n**➭ 𝐁𝐚𝐭𝐜𝐡 »  {b_name}**\n\n✨ **𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐃 𝐁𝐘 : {CR}**\n**━━━━━━━✦✗✦━━━━━━━**'
+                     
                 if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
